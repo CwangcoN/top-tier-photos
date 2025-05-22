@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Tier Photos With Cwangco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+
+<!-- Navbar -->
+<nav class="bg-black text-yellow-300 border-b border-yellow-500 shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <h1 class="text-2xl font-extrabold tracking-wide text-yellow-400">Top Tier Photos</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 items-center">
+        <li><a href="index.html" class="hover:text-yellow-500 transition duration-200">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-500 transition duration-200">About</a></li>
+        <li><a href="gallery.html" class="hover:text-yellow-500 transition duration-200">Gallery</a></li>
+        <li><a href="booking.html" class="hover:text-yellow-500 transition duration-200">Booking</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-500 transition duration-200">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-yellow-400 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-2">
+      <ul class="flex flex-col gap-2">
+        <li><a href="index.html" class="block py-2 hover:text-yellow-500">Home</a></li>
+        <li><a href="about.html" class="block py-2 hover:text-yellow-500">About</a></li>
+        <li><a href="gallery.html" class="block py-2 hover:text-yellow-500">Gallery</a></li>
+        <li><a href="booking.html" class="block py-2 hover:text-yellow-500">Booking</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-yellow-500">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- Hero Section -->
+<section
+  class="h-screen bg-cover bg-center flex items-center justify-center"
+  style="background-image: url('images/Background.jpg');">
+  <div class="text-center px-6 py-8 bg-black bg-opacity-60 backdrop-blur-sm rounded-lg shadow-lg max-w-2xl">
+    <h2 class="text-5xl md:text-6xl font-bold text-yellow-400 mb-6 leading-tight drop-shadow">
+      Top Tier Photos With Cwangco
+    </h2>
+    <p class="text-lg md:text-xl text-yellow-100 mb-6">Capturing moments, telling stories through the lens.</p>
+    <a href="gallery.html" class="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-300 transition duration-300">
+      View Gallery
+    </a>
+  </div>
+</section>
+
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-black border-t border-yellow-500">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold text-yellow-400 mb-10">What Our Clients Say</h3>
+    
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Testimonial 1 -->
+      <div class="bg-yellow-100 text-black p-6 rounded-lg shadow-lg">
+        <p class="italic">"Cwangco captured our wedding so beautifully — every photo tells a story!"</p>
+        <div class="mt-4 font-semibold">– Thandi & Sipho</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-yellow-100 text-black p-6 rounded-lg shadow-lg">
+        <p class="italic">"Professional, friendly, and truly top-tier photography. Highly recommended!"</p>
+        <div class="mt-4 font-semibold">– Kabelo M.</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-yellow-100 text-black p-6 rounded-lg shadow-lg">
+        <p class="italic">"Our brand shoot came out crisp, stylish, and unique — exactly what we needed."</p>
+        <div class="mt-4 font-semibold">– Zanele D.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>

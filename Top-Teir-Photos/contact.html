@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Top Tier Photos With Cwangco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+
+  <!-- Navbar -->
+<nav class="bg-black text-yellow-300 border-b border-yellow-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <h1 class="text-2xl font-bold text-yellow-400">Top Tier Photos</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 items-center">
+        <li><a href="index.html" class="hover:text-yellow-500 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-500 transition">About</a></li>
+        <li><a href="gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+        <li><a href="booking.html" class="hover:text-yellow-500 transition">Booking</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-500 transition">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-yellow-400 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-2">
+      <ul class="flex flex-col gap-2">
+        <li><a href="index.html" class="block py-2 hover:text-yellow-500">Home</a></li>
+        <li><a href="about.html" class="block py-2 hover:text-yellow-500">About</a></li>
+        <li><a href="gallery.html" class="block py-2 hover:text-yellow-500">Gallery</a></li>
+        <li><a href="booking.html" class="block py-2 hover:text-yellow-500">Booking</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-yellow-500">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <!-- Contact Section -->
+  <section class="py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">Get In Touch</h2>
+      <p class="text-lg text-yellow-200 max-w-2xl mx-auto">
+        Have a question, feedback, or just want to chat? Fill out the form below, and I’ll get back to you as soon as possible.
+      </p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="max-w-3xl mx-auto">
+      <form action="submit_contact.php" method="POST" class="space-y-6">
+        
+        <!-- Full Name -->
+        <div>
+          <label for="full-name" class="block text-lg font-semibold text-yellow-300">Full Name</label>
+          <input type="text" id="full-name" name="full_name" required class="w-full mt-2 p-3 bg-black text-white border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Enter your full name">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-lg font-semibold text-yellow-300">Email Address</label>
+          <input type="email" id="email" name="email" required class="w-full mt-2 p-3 bg-black text-white border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Enter your email address">
+        </div>
+
+        <!-- Subject -->
+        <div>
+          <label for="subject" class="block text-lg font-semibold text-yellow-300">Subject</label>
+          <input type="text" id="subject" name="subject" required class="w-full mt-2 p-3 bg-black text-white border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Enter subject">
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-lg font-semibold text-yellow-300">Message</label>
+          <textarea id="message" name="message" rows="6" required class="w-full mt-2 p-3 bg-black text-white border border-yellow-500 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500" placeholder="Write your message here"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit" class="w-full py-3 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-500 transition">
+            Send Message
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

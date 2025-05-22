@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Top Tier Photos With Cwangco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+
+  <!-- Navbar -->
+<nav class="bg-black text-yellow-300 border-b border-yellow-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <h1 class="text-2xl font-bold text-yellow-400">Top Tier Photos</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 items-center">
+        <li><a href="index.html" class="hover:text-yellow-500 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-500 transition">About</a></li>
+        <li><a href="gallery.html" class="hover:text-yellow-500 transition">Gallery</a></li>
+        <li><a href="booking.html" class="hover:text-yellow-500 transition">Booking</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-500 transition">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-yellow-400 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden mt-2">
+      <ul class="flex flex-col gap-2">
+        <li><a href="index.html" class="block py-2 hover:text-yellow-500">Home</a></li>
+        <li><a href="about.html" class="block py-2 hover:text-yellow-500">About</a></li>
+        <li><a href="gallery.html" class="block py-2 hover:text-yellow-500">Gallery</a></li>
+        <li><a href="booking.html" class="block py-2 hover:text-yellow-500">Booking</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-yellow-500">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <!-- About Section -->
+<section class="px-6 py-16 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Image -->
+    <div class="flex justify-center">
+      <img src="images/About.jpg" alt="Cwangco" class="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-yellow-400">
+    </div>
+
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-4xl font-bold text-yellow-400 mb-6">About Cwangco</h2>
+      <p class="text-lg text-yellow-200 mb-4">
+        I'm Cwangco, a versatile photographer passionate about capturing moments that speak. Whether it's street scenes, portraits, events, or landscapes — every shot tells a story. 
+      </p>
+      <p class="text-lg text-yellow-200 mb-4">
+        Photography is more than a craft to me — it’s a way to freeze time, highlight emotion, and elevate the everyday to the extraordinary. I’m always exploring new styles, locations, and moods to bring out the best in every frame.
+      </p>
+      <p class="text-lg text-yellow-200">
+        Welcome to my world behind the lens — where every photo is Top Tier.
+      </p>
+    </div>
+  </div>
+
+  <!-- Highlights -->
+  <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+    <div class="bg-yellow-100 text-black p-6 rounded-lg shadow-md">
+      <div class="text-3xl font-bold mb-2">5+</div>
+      <p class="font-medium">Years of Experience</p>
+    </div>
+    <div class="bg-yellow-100 text-black p-6 rounded-lg shadow-md">
+      <div class="text-3xl font-bold mb-2">100+</div>
+      <p class="font-medium">Happy Clients</p>
+    </div>
+    <div class="bg-yellow-100 text-black p-6 rounded-lg shadow-md">
+      <div class="text-3xl font-bold mb-2">5000+</div>
+      <p class="font-medium">Photos Delivered</p>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
